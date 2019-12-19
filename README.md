@@ -1,15 +1,15 @@
-# SP Ask Running Total Daily report
-An helper that create and Excel document representing the number of chats per day. Which are on the Daily Spreadsheet
+# SP Ask Running Total hourly report
+An helper that create and Excel document representing the number of chats per day. Which are on the hourly Spreadsheet
 
 ### Installation
 
-    $ pip install sp_ask_running_total_daily_report
+    $ pip install sp_ask_running_total_hourly_report
     $ or with poetry
-    $ poetry add sp_ask_running_total_daily_report
+    $ poetry add sp_ask_running_total_hourly_report
 
 ### Utilisation
 ```python
-from sp_ask_running_total_daily_report import create_report
+from sp_ask_running_total_hourly_report import create_report
 
 # generating stats for a given month (february)
 create_report(2019, 2)
@@ -21,7 +21,7 @@ for month_number in range(1, 13):
 Will create a file **'2-February.xlsx'** on the current directory
 
 ### Screenshot
-This is a screenshot. We don't provide our daily stats to the public. The number below were updated to fake our real numbers.
+This is a screenshot. We don't provide our hourly stats to the public. The number below were updated to fake our real numbers.
 ![screenshot of app](screenshots/screenshot3.png)
 
 
