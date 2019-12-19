@@ -86,9 +86,9 @@ def create_report(year=2019, month=2):
 
 
 if __name__ == '__main__':
-    create_report(2019, 11)
+    #create_report(2019, 11)
 
     for month_number in range(1, 13):
-        pass
-        #create_report(2019, month_number)
+        #pass
+        create_report(2019, month_number)
 

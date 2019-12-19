@@ -104,3 +104,4 @@ schedule_outp*
 */*.code-workspace
 *.egg-info
 .DS_Store
+.vscode/
