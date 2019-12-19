@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "sp_ask_running_total_hourly_report"
-version = "0.1.6"
+version = "0.1.5"
 description = "An helper that create and Excel document representing the number of chats per hour"
 authors = ["Guinsly Mondesir <guinslym@gmail.com>"]
 readme = "README.md"

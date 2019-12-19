@@ -1,27 +1,20 @@
-__version__ = '0.1.0'
+__version__ = '0.1.5'
 
-data = [12, 10, 9, 9, 9, 10, 11, 8, 7, 7]
+#std library
 from collections import Counter
 from collections import OrderedDict
-Counter(data)
-dict(Counter(data))
 import calendar
 import datetime
-import arrow
 from pprint import pprint as print
 
+#packages
 import pandas as pd
-
+import arrow
 import lh3.api as lh3
 
 
 client = lh3.Client()
 chats = client.chats()
-
-#for each day 
-#find hours
-#create a list of hours
-#transform it to a lis
 
 def create_excel_file(filename, data):
     df = pd.DataFrame(data)
@@ -86,17 +79,16 @@ def create_report(year=2019, month=2):
         print(this_day)
         result['date'] = this_day
         chats_per_hour.append(result)
-        #print(result)
-    #print(chats_per_hour)
     res = pd.DataFrame(chats_per_hour)
     #print(res)
     
-    create_excel_file('february', chats_per_hour)
+    create_excel_file(filename, chats_per_hour)
 
 
-create_report()
+if __name__ == '__main__':
+    create_report(2019, 11)
 
-res = [
-    {'2019-2-28': {10: 18, 11: 12}},
-    {'2019-2-29': {10: 3, 11: 17}}
-]
+    for month_number in range(1, 13):
+        pass
+        #create_report(2019, month_number)
+
