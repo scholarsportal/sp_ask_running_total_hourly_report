@@ -99,8 +99,8 @@ ENV/
 tt_*
 schedule.xls*
 schedule_outp*
-
+*.xls*
 /dist
-
+*/*.code-workspace
 *.egg-info
 .DS_Store
