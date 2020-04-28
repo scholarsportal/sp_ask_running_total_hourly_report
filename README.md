@@ -1,3 +1,10 @@
+[
+![PyPI](https://img.shields.io/pypi/v/sp_ask_report_chats_per_school.svg)
+![PyPI](https://img.shields.io/pypi/pyversions/sp_ask_report_chats_per_school.svg)
+![PyPI](https://img.shields.io/github/license/guinslym/sp_ask_report_chats_per_school.svg)
+](https://pypi.org/project/sp_ask_report_chats_per_school/)
+[![TravisCI](https://travis-ci.org/guinslym/sp_ask_report_chats_per_school.svg?branch=master)](https://travis-ci.org/guinslym/sp_ask_report_chats_per_school)
+
 # SP Ask Running Total hourly report
 An helper that create and Excel document representing the number of chats per day. Which are on the hourly Spreadsheet
 
