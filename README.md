@@ -14,6 +14,33 @@ An helper that create and Excel document representing the number of chats per da
     $ or with poetry
     $ poetry add sp_ask_running_total_hourly_report
 
+## Requirement
+
+lh3api is a requirement for this package[ lh3api configuation files](https://gitlab.com/libraryh3lp/libraryh3lp-sdk-python/) need to be installed first.
+
+
+In ~/.lh3/config::
+
+    [default]
+    server = libraryh3lp.com
+    timezone = UTC
+    salt = "you should probably change this"
+
+The `salt` is used when generating system-level utility accounts.
+This is not something you do often.  If your `salt` is unique, your
+passwords will be unique.
+
+In ~/.lh3/credentials::
+
+    [default]
+    username = <ADMIN_USER>
+    password = <ADMIN_PASS>
+
+    [test]
+    username = <TEST_USER>
+    password = <TEST_PASS>
+
+
 ### Utilisation
 ```python
 from sp_ask_running_total_hourly_report import create_report
